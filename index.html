@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ff4f93">
+  <title>15 Days | Rushabh &amp; Medhavi</title>
+  <meta name="description" content="A colourful digital love letter celebrating 15 beautiful days together, created by Rushabh for Medhavi.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff3d7f' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-scene="1">
+  <audio id="ambient-music" loop preload="metadata">
+    <source src="assets/audio/ambient.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Top bar: progress + chapter + music -->
+  <header class="top-bar" id="top-bar">
+    <div class="progress-track" id="progress-container" role="progressbar" aria-label="Story progress" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div class="top-bar-row">
+      <span class="chapter-pill" id="progress-text">Chapter 1 of 8</span>
+      <button class="music-btn" id="btn-music" type="button" aria-pressed="false" aria-label="Play music"><span aria-hidden="true">&#9834;</span></button>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- Scene 1: The Secret Invitation -->
+    <section class="scene scene--1" id="scene-1" data-chapter="1" aria-labelledby="s1-title">
+      <div class="scene-bg" aria-hidden="true"><div class="floaters"></div></div>
+      <div class="scene-content">
+        <div class="sticker-row reveal-text" aria-hidden="true">
+          <span class="sticker sticker--md sticker--tilt-l sticker--bob" data-sticker="holding-hands"></span>
+          <span class="sticker sticker--sm sticker--emoji sticker--bob-slow">&#129392;</span>
+          <span class="sticker sticker--md sticker--tilt-r sticker--bob" data-sticker="love-letter"></span>
+        </div>
+        <div class="envelope-wrapper" id="envelope-wrapper" role="button" tabindex="0" aria-label="Open the envelope">
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-letter"><span>For you, Medhavi &#9829;</span></div>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap"></div>
+            <div class="heart-seal" id="heart-seal-1">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+          </div>
+        </div>
+        <h1 class="title reveal-text" id="s1-title">Some stories take years to become unforgettable.<span class="title-sub">Ours needed only 15 days.</span></h1>
+        <p class="dedication reveal-text delay">For Medhavi, from Rushabh</p>
+        <button class="cta-button reveal-text delay-2" id="btn-scene-1-next" type="button">Open Your Surprise <span aria-hidden="true">&#128157;</span></button>
+      </div>
+    </section>
+
+    <!-- Scene 2: The Beginning of Us -->
+    <section class="scene scene--2" id="scene-2" data-chapter="2" aria-labelledby="s2-title">
+      <div class="scene-bg" aria-hidden="true"><div class="floaters"></div></div>
+      <div class="scene-content">
+        <div class="sticker-row reveal-text" aria-hidden="true">
+          <span class="sticker sticker--lg sticker--bob" data-sticker="hug-bears"></span>
+        </div>
+        <h1 class="title reveal-text" id="s2-title">15 Days.<br>One Beautiful Beginning.</h1>
+        <div class="milestone-card reveal-text delay">
+          <span class="sticker sticker--sm corner-sticker corner-sticker--tr" data-sticker="heart-hands" aria-hidden="true"></span>
+          <span class="sticker sticker--sm sticker--emoji corner-sticker corner-sticker--bl" aria-hidden="true">&#129392;</span>
+          <div class="milestone-number">15</div>
+          <div class="milestone-label">days of us</div>
+        </div>
+        <div class="glass-card reveal-text delay-2">
+          <p class="message-text">Medhavi, these fifteen days are only the first pages of my favourite story.</p>
+          <p class="message-text">A short time, and yet it feels like a lifetime of warmth, laughter, and quiet excitement for what comes next. Every conversation, every shared smile, and every little moment has already found a place I will not forget.</p>
+        </div>
+        <div class="emoji-strip reveal-text delay-3" aria-hidden="true"><span>&#129303;</span><span>&#128158;</span><span>&#129782;</span><span>&#128107;</span><span>&#129392;</span></div>
+      </div>
+    </section>
+
+    <!-- Scene 3: Fifteen Little Reasons -->
+    <section class="scene scene--3" id="scene-3" data-chapter="3" aria-labelledby="s3-title">
+      <div class="scene-bg" aria-hidden="true"><div class="floaters"></div></div>
+      <div class="scene-content scene-content--wide">
+        <div class="sticker-row reveal-text" aria-hidden="true">
+          <span class="sticker sticker--md sticker--tilt-l sticker--bob" data-sticker="hugging-hearts"></span>
+          <span class="sticker sticker--md sticker--tilt-r sticker--bob-slow" data-sticker="heart-hands"></span>
+        </div>
+        <h1 class="title reveal-text" id="s3-title">Fifteen Little Reasons</h1>
+        <p class="subtitle reveal-text delay">Tap a heart &mdash; every one of these days matters.</p>
+        <div class="hearts-grid" id="hearts-grid">
+          <!-- Reason cards injected by script.js -->
+        </div>
+        <button class="pill-btn reveal-text delay-2" id="btn-reveal-all" type="button">Reveal every reason &#10024;</button>
+      </div>
+    </section>
+
+    <!-- Scene 4: Rhymes Written for You -->
+    <section class="scene scene--4" id="scene-4" data-chapter="4" aria-labelledby="s4-title">
+      <div class="scene-bg" aria-hidden="true"><div class="floaters"></div></div>
+      <div class="scene-content">
+        <div class="sticker-row reveal-text" aria-hidden="true">
+          <span class="sticker sticker--md sticker--tilt-l sticker--bob" data-sticker="kiss-cats"></span>
+          <span class="sticker sticker--sm sticker--emoji sticker--bob-slow">&#127801;</span>
+        </div>
+        <h1 class="title reveal-text" id="s4-title">Rhymes Written for You</h1>
+        <div class="poetry-container" id="poetry-container">
+          <!-- Poem cards injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 5: Hidden Love Notes -->
+    <section class="scene scene--5" id="scene-5" data-chapter="5" aria-labelledby="s5-title">
+      <div class="scene-bg" aria-hidden="true"><div class="floaters"></div></div>
+      <div class="scene-content scene-content--wide">
+        <div class="sticker-row reveal-text" aria-hidden="true">
+          <span class="sticker sticker--lg sticker--bob" data-sticker="teddy-heart"></span>
+        </div>
+        <h1 class="title reveal-text" id="s5-title">Hidden Love Notes</h1>
+        <p class="subtitle reveal-text delay">Sealed with care, opened by you.</p>
+        <div class="notes-container" id="notes-container">
+          <!-- Note cards injected by script.js -->
+        </div>
+        <button class="pill-btn pill-btn--ghost secret-hint reveal-text delay-2" id="secret-hint" type="button">Psst&hellip; tap me three times</button>
+      </div>
+    </section>
+
+    <!-- Scene 6: Love, Drawn in Circles (Fourier series) -->
+    <section class="scene scene--6" id="scene-6" data-chapter="6" aria-labelledby="s6-title">
+      <div class="scene-bg" aria-hidden="true"><div class="floaters"></div></div>
+      <div class="scene-content scene-content--wide">
+        <h1 class="title title--glow reveal-text" id="s6-title">Love, Drawn in Circles</h1>
+        <p class="subtitle reveal-text delay">Hundreds of tiny circles spinning together to write one message.</p>
+        <div class="fourier-stage reveal-text delay-2">
+          <span class="sticker sticker--sm corner-sticker corner-sticker--tr" data-sticker="heart-balloons" aria-hidden="true"></span>
+          <canvas id="fourier-canvas" role="img" aria-label="Animated Fourier series drawing that spells: Love You Medhavi">Love You Medhavi &#9829;</canvas>
+        </div>
+        <div class="fourier-controls reveal-text delay-3">
+          <button class="pill-btn" id="btn-fourier-replay" type="button">&#8634; Draw it again</button>
+          <button class="pill-btn pill-btn--ghost" id="btn-fourier-circles" type="button" aria-pressed="true">Hide circles</button>
+        </div>
+        <p class="fourier-caption reveal-text delay-4">Every shape can be drawn by circles spinning on circles. These ones only know how to spell one thing.</p>
+      </div>
+    </section>
+
+    <!-- Scene 7: A Letter from Rushabh -->
+    <section class="scene scene--7" id="scene-7" data-chapter="7" aria-labelledby="s7-title">
+      <div class="scene-bg" aria-hidden="true"><div class="floaters"></div></div>
+      <div class="scene-content">
+        <article class="letter reveal-text">
+          <span class="washi washi--l" aria-hidden="true"></span>
+          <span class="washi washi--r" aria-hidden="true"></span>
+          <span class="sticker sticker--md corner-sticker corner-sticker--tr" data-sticker="love-birds" aria-hidden="true"></span>
+          <h1 class="letter-header" id="s7-title">A Letter from Rushabh</h1>
+          <div class="letter-content">
+            <p>Dear Medhavi,</p>
+            <p>Happy 15th day to us, my favourite beginning.</p>
+            <p>It may be only fifteen days on the calendar, but these days deserve a little celebration of their own. I wanted to make you something different, something you could open whenever you wanted a reminder that you are appreciated.</p>
+            <p>I don&rsquo;t know every chapter our story will have, and that is part of what makes it beautiful. I look forward to the conversations we have not had yet, the laughter we have not shared yet, the places we might discover, and the memories that are still waiting for us.</p>
+            <p>I hope I can keep giving you reasons to smile, keep learning what makes you happy, and keep showing up with care and honesty.</p>
+            <p>No pressure for perfection. No promises written just to sound beautiful. Just a genuine wish to make the days ahead meaningful, one little moment at a time.</p>
+            <p>Thank you for being you.</p>
+            <p>Happy 15 days, Medhavi.</p>
+          </div>
+          <div class="letter-signature">
+            With all my affection,
+            <span class="signature">Rushabh</span>
+          </div>
+          <span class="sticker sticker--md corner-sticker corner-sticker--bl" data-sticker="couple-hug" aria-hidden="true"></span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Scene 8: The Final Reveal -->
+    <section class="scene scene--8" id="scene-8" data-chapter="8" aria-labelledby="s8-title">
+      <div class="scene-bg" aria-hidden="true">
+        <canvas class="confetti-canvas" id="s8-canvas"></canvas>
+        <div class="floaters"></div>
+      </div>
+      <div class="scene-content">
+        <div class="sticker-row sticker-row--hero reveal-text" aria-hidden="true">
+          <span class="sticker sticker--md sticker--tilt-l sticker--bob-slow" data-sticker="holding-hands"></span>
+          <span class="sticker sticker--lg sticker--bob" data-sticker="couple-hug"></span>
+          <span class="sticker sticker--md sticker--tilt-r sticker--bob-slow" data-sticker="cupid-heart"></span>
+        </div>
+        <h1 class="title reveal-text" id="s8-title">Our First 15 Days.<br>A Thousand Possibilities.</h1>
+        <h2 class="title-sub reveal-text delay">Happy 15th Day Anniversary, Medhavi! &#127881;</h2>
+        <blockquote class="final-verse glass-card reveal-text delay-2">
+          &ldquo;Fifteen days down, so much to explore,<br>
+          New little memories, a thousand more.<br>
+          Whatever tomorrow may bring our way,<br>
+          I&rsquo;m glad we began this beautiful day.&rdquo;
+        </blockquote>
+        <p class="final-signature reveal-text delay-3">Yours in this little story,<span class="signature">Rushabh</span></p>
+        <div class="emoji-strip reveal-text delay-3" aria-hidden="true"><span>&#128145;</span><span>&#129303;</span><span>&#128143;</span><span>&#129782;</span><span>&#127801;</span><span>&#129528;</span><span>&#128150;</span></div>
+        <div class="final-actions reveal-text delay-4">
+          <button class="cta-button" id="btn-secret" type="button" aria-expanded="false" aria-controls="secret-message">One Last Secret <span aria-hidden="true">&#129323;</span></button>
+          <button class="pill-btn" id="btn-replay" type="button">&#8634; Replay Our Story</button>
+        </div>
+        <div class="secret-message glass-card" id="secret-message" hidden>
+          If you smiled even once while exploring this little world, then every line, every animation, and every tiny detail was worth creating for you. &#128151;
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom navigation: Back | dots | Next (never overlaps content) -->
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Chapter navigation">
+    <button class="nav-btn nav-btn--back" id="nav-back" type="button" aria-label="Previous chapter"><span aria-hidden="true">&lsaquo;</span><span class="nav-btn-label">Back</span></button>
+    <div class="nav-dots" id="nav-dots" aria-hidden="true"></div>
+    <button class="nav-btn nav-btn--next" id="nav-next" type="button" aria-label="Next chapter"><span class="nav-btn-label">Next</span><span aria-hidden="true">&rsaquo;</span></button>
+  </nav>
+
+  <script src="stickers.js"></script>
+  <script src="fourier.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
